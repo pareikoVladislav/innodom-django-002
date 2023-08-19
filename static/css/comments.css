@@ -1,0 +1,48 @@
+body {
+    background-color: #999999;
+}
+
+.comments_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.comments_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: dodgerblue;
+}
+
+.comments_block h1 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.comments_block h2 {
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.comments_block h3 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.comments_block h4 {
+    font-size: 16px;
+    color: #444;
+    margin-top: 10px;
+}

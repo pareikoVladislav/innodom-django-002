@@ -12,7 +12,7 @@ class Comment(models.Model):
     )
     context = models.TextField(max_length=1500)
     created_at = models.DateTimeField(auto_now_add=True)
-    moderated = models.BooleanField(null=True)
+    moderated = models.BooleanField(default=False)
 
     def __str__(self):
         return f"{self.user.username}-{self.context[:11]}"

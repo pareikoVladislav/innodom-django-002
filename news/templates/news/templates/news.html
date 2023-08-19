@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{% static 'css/news.css' %}" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<div class="news_container">
+    {% for news_obj in news %}
+    <div class="news_block">
+        <h1>{{news_obj.title}}</h1>
+        <h2>{{news_obj.description}}</h2>
+        <h3>{{news_obj.created_at}}</h3>
+        <h4>{{news_obj.moderated}}</h4>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>
